@@ -1,0 +1,59 @@
+
+@keyframes example {
+    0%   {background-color:red; left:50px; top:50px;}
+    25%  {background-color:yellow; left:500px; top:50px;}
+    50%  {background-color:blue; left:500px; top:400px;}
+    75%  {background-color:green; left:50px; top:400px;}
+    100% {background-color:red; left:50px; top:50px;}
+  }
+  
+  /* The element to apply the animation to */
+  div{
+      background-image: url('https://wordsjustforyou.com/wp-content/uploads/2019/03/Happy-Holi-GIF_9.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 600px;
+  }
+  p{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+  }
+  @media only screen and (max-width: 600px) {
+    @keyframes example {
+        0%   {background-color:red; left:50px; top:50px;}
+        25%  {background-color:yellow; left:250px; top:50px;}
+        50%  {background-color:blue; left:250px; top:200px;}
+        75%  {background-color:green; left:50px; top:200px;}
+        100% {background-color:red; left:50px; top:50px;}
+      }
+      
+      /* The element to apply the animation to */
+      div{
+          background-image: url('https://wordsjustforyou.com/wp-content/uploads/2019/03/Happy-Holi-GIF_9.gif');
+          background-size: 100% 100%;
+      }
+      p{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        color: white;
+        padding-top: 80px;
+        padding-bottom: 0px;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+      }
+  }
